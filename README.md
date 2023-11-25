@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://main--unrivaled-baklava-081aca.netlify.app/">
+    <a href="https://genuine-valkyrie-95d70f.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/leaclf/contact-Page">
+    <a href="https://github.com/leaclf/s-homepage">
       Solution
     </a>
     <span> | </span>
