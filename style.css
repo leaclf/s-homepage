@@ -9,7 +9,7 @@
 .dark-theme {
   --background-color: #111729;
   --dark-text: #fff;
-  --background-fixed: #203269;
+  --background-fixed: #011d71;
   --dark-blue: #fff;
   --grey-blue: #fff;
 }
@@ -32,6 +32,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #open {
   color: var(--dark-text);
@@ -53,10 +54,13 @@ body {
   margin-top: 3em;
   text-align: center;
 }
+.nav__list li {
+  margin-bottom: 1.5em;
+}
 .nav__list .nav__link {
   text-decoration: none;
   color: #555;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
@@ -67,26 +71,37 @@ body {
   color: var(--dark-text);
 }
 .theme-container-1 {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
+  background: #223344;
+  border-radius: 2em;
+  column-gap: 0.2em;
+  padding: 0.2em 0.4em;
+}
+.theme-container-1 svg:nth-of-type(2) {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  transition: background-color 0.8s;
+  border-radius: 50%;
+}
+.theme-container-1 svg:nth-of-type(1) {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  transition: background-color 0.8s;
+  border-radius: 50%;
+  filter: brightness(1000%);
+}
+.dark-theme .theme svg:nth-of-type(1) {
+  background-color: #fff;
+  filter: none;
+}
+.dark-theme .theme svg:nth-of-type(2) {
+  background-color: transparent;
+  filter: brightness(1000%);
 }
 .theme-container-2 {
   display: none;
-}
-.nav__theme {
-  background: #223344;
-  padding: 0.2em 0.3em;
-  border-radius: 2em;
-  display: flex;
-  justify-content: space-between;
-  column-gap: 0.5em;
-}
-
-.light__theme {
-  background-color: #fff;
-  height: 1.5em;
-  display: inline-block;
-  border-radius: 50%;
 }
 .close-button {
   position: absolute;
@@ -111,7 +126,7 @@ body {
     margin-right: 2em;
   }
   .nav__list .nav__link {
-    font-size: 1.125em;
+    font-size: 1rem;
     font-weight: 600;
   }
   .icon-logo {
@@ -119,8 +134,29 @@ body {
     margin-right: auto;
   }
   .theme-container-2 {
-    display: block;
+    display: flex;
+    background: #223344;
+    border-radius: 2rem;
+    column-gap: 0.2rem;
+    padding: 0.2rem 0.4rem;
     margin-left: auto;
+  }
+  .theme-container-2 svg:nth-of-type(2) {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transition: background-color 0.8s;
+    border-radius: 50%;
+  }
+  .theme-container-2 svg:nth-of-type(1) {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.8s;
+    filter: brightness(1000%);
   }
   .theme-container-1 {
     display: none;
